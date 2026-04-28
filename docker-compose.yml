@@ -1,18 +1,17 @@
-version: "3"
-
 services:
   server:
-    build: .
+    build:
+      context: ./Server
     ports:
       - "8080:8080"
     environment:
-      - GEMINI_API_KEY=AIzaSyD8WtmV1d2mBNryqlnBRqno08IyxPmtpwg
+      - GEMINI_API_KEY=AIzaSyA7TjEhgYkhw9WWnDHWZMTd2yos-PuoaFE
 
   client:
     image: nginx
     ports:
       - "3000:80"
     volumes:
-      - ./client:/usr/share/nginx/html
+      - ./Client:/usr/share/nginx/html
     depends_on:
       - server
