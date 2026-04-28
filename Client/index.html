@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot IoT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo">
+      🤖 <span>Chatbot <b>IoT</b></span>
+    </div>
+
+    <div class="iot-box">
+      <h3>📡 Topik IoT</h3>
+      <p>Internet Of Things</p>
+    </div>
+<!-- NEW CHAT -->
+<button class="new-chat" onclick="newChat()">+ New Chat</button>
+
+<!-- RECENTS -->
+<div class="recents">
+  <h4>Recents</h4>
+  <div id="chatList"></div>
+</div>
+
+    <div class="city"></div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="topbar">
+      <div class="title">💬 Percakapan</div>
+      <div class="status">● Online</div>
+    </div>
+
+    <div id="chatbox"></div>
+
+    <div class="input-area">
+      <input id="input" placeholder="Tanya tentang IoT..." />
+      <button onclick="sendMessage()">Kirim</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
