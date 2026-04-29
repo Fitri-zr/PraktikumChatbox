@@ -11,7 +11,7 @@ async function sendMessage() {
   chatbox.innerHTML += `<div class="message bot" id="loading">Mengetik...</div>`;
 
   try {
-    const res = await fetch("http://localhost:8080/chat", {
+    const res = await fetch("http://172.27.195.252:8080/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -168,7 +168,7 @@ async function sendMessage() {
   chatbox.innerHTML += `<div class="message bot" id="loading">Mengetik...</div>`;
 
   try {
-    const res = await fetch("http://localhost:8080/chat", {
+    const res = await fetch("http://172.27.195.252:8080/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
